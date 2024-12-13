@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login com Google e Google Fit</title>
+    <!-- Carregar o SDK do Google Identity Services -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <!-- Carregar jwt-decode para decodificar o token JWT -->
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+</head>
+<body>
+<h1>Login com Google e Acesso ao Google Fit</h1>
+
+<!-- Botão de Login com Google -->
+<div id="g_id_onload"
+     data-client_id="182308303226-9ma1qn7f10b7irrfajak3p4lv5op5tal.apps.googleusercontent.com"
+     data-callback="handleCredentialResponse"
+     data-auto_prompt="false">
+</div>
+
+<div class="g_id_signin"
+     data-type="standard"
+     data-shape="rectangular"
+     data-theme="outline"
+     data-text="signin_with"
+     data-size="large"
+     data-logo_alignment="left">
+</div>
+
+<!-- Elemento para exibir dados do usuário e Google Fit -->
+<div id="user-info"></div>
+<div id="fit-data"></div>
+
+<!-- Carregar o JavaScript personalizado -->
+<script src="app.js"></script>
+</body>
+</html>
