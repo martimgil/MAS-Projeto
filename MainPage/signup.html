@@ -11,61 +11,77 @@
     <script src="https://accounts.google.com/gsi/client" async defer></script>
     <!-- Carregar jwt-decode para decodificar o token JWT -->
     <script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+    <style src="signup.css"></style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg " style="background-color: #80ba00">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Corsano@UA</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contactos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link ms-auto" href="#" style="float: right">Iniciar sessão</a>
-          </li>
-        </ul>
-        <a class="btn btn-primary shadow" role="button" style="color:white !important;" href="signup.html">Iniciar sessão</a>
-        <span class="navbar-text">
-            </span>
-      </div>
+    <nav class="navbar navbar-expand-lg" style="background-color: #80ba00">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="imagens/LogoCorSano_white.svg" height="50px" width="auto">
+                <img src="imagens/Marca%20UA%20Complementar%20BRANCO.png" height="50px" width="auto">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Alimentação</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Aulas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">O Campus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">O meu progresso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recompensas</a>
+                    </li>
+                </ul>
+                <a class="btn btn-light" role="button" style="color:black !important;" href="signup.html">Área Pessoal</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card mt-5">
+                    <div class="card-header text-center">
+                        <h3>Iniciar Sessão</h3>
+                        <p>Inicie sessão com o seu acesso de utilizador universal da UA.</p>
+                    </div>
+                    <form id="loginForm">
+                        <div class="mb-3 form-control">
+                            <input type="email" class="form-control" id="email" placeholder="Digite o seu email" required>
+                            <label for="email" class="form-label">Email</label>
+                            <div class="invalid-feedback">
+                                Por favor, insira um email válido.
+                            </div>
+                        </div>
+                        <div class="mb-3 form-control">
+                            <input type="password" class="form-control" id="password" placeholder="Digite sua palavra-passe" required>
+                            <label for="password" class="form-label">Palavra-Passe</label>
+                            <div class="invalid-feedback">
+                                Por favor, insira a sua palavra-passe.
+                            </div>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-  </nav>
-  <div class="col-md-8 text-center mx-auto">
-    <br>
-    <h2 data-aos="fade-up">Iniciar Sessão</h2>
-    <p data-aos="fade-up" class="w-lg-50">Inicia Sessão com a tua Conta Google para uma experiência personalizada.</p>
-  </div>
-  <div id="g_id_onload"
-       data-client_id="615245833104-bami8dlm6ecirfu5acoh6npfleef8vm3.apps.googleusercontent.com"
-       data-callback="handleCredentialResponse"
-       data-auto_prompt="false">
-  </div>
-  <div class="d-flex justify-content-center" data-aos="fade-up">
-    <div class="g_id_signin"
-         data-type="standard"
-         data-shape="rectangular"
-         data-theme="outline"
-         data-text="signin_with"
-         data-size="large"
-         data-logo_alignment="left"
-         style="width: 300px">
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="assets/js/bs-init.js"></script>
-  <script src="assets/js/app.js"></script>
-  <script>
-    AOS.init();
-  </script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
