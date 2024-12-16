@@ -46,25 +46,29 @@
 <body>
     <nav class="navbar navbar-expand-lg " style="background-color: #80ba00">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Corsano@UA</a>
+            <a class="navbar-brand" href="#"><img src="imagens/LogoCorSano_white.svg" height="50px" width="auto"><img src="imagens/Marca%20UA%20Complementar%20BRANCO.png" height="50px" width="auto"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+                <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="alimentacao.html">Alimentação</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contactos</a>
+                        <a class="nav-link" href="#">Aulas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link ms-auto" href="#" style="float: right">Iniciar sessão</a>
+                        <a class="nav-link" href="#">O Campus</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="progresso.html">O meu progresso</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recompensas</a>
                     </li>
                 </ul>
-                <a class="btn btn-light" role="button" style="color:white !important;" href="signup.html">Iniciar sessão</a>
-                <span class="navbar-text">
-              </span>
+                <a class="btn btn-light" role="button" style="color:black !important;" href="signup.html">Área Pessoal</a>
             </div>
         </div>
     </nav>
@@ -72,18 +76,21 @@
         <div class="row">
             <h1>Progresso</h1>
             <p>Consulta aqui o teu histórico e progresso.</p>
-
         </div>
     </div>
     <div class="row mb-4" style="margin-left: 70px;">
         <div class="col-md-6">
-            <h4 class="fw-bold">Histórico de acesso</h4>
-            <p>Aula de Badminton - 02/12/2024 - 17:15</p>
-            <p>Jogo de Badminton - EI vs ECT - Taça UA - 29/11/2024</p>
+                <h4 class="fw-bold">Histórico de acesso</h4>
+                <p>Aula de Badminton - 02/12/2024 - 17:15</p>
+                <p>Jogo de Badminton - EI vs ECT - Taça UA - 29/11/2024</p>
+                <div id="historico"></div>
+                <button class="btn btn-primary" onclick="addInfo('historico')">Adicionar Informação</button>
         </div>
         <div class="col-md-6">
             <h4 class="fw-bold">As minhas marcações</h4>
             <p>Aula de Badminton - 09/12/2024 - 17:15</p>
+            <div id="marcacoes"></div>
+            <button class="btn btn-primary" onclick="addInfo('marcacoes')">Adicionar Informação</button>
         </div>
     </div>
 
@@ -96,6 +103,8 @@
             <p>Energia Gasta: 31 calorias</p>
             <p>Minutos ativos: 18</p>
             <p>Ritmo Cardíaco: 106 bpm (média)</p>
+            <div id="atividade-caminhar-almoco"></div>
+            <button class="btn btn-primary" onclick="addInfo('atividade-caminhar-almoco')">Adicionar Informação</button>
         </div>
         <div class="col-md-4">
             <h5 class="fw-bold">Caminhar à noite 🏃</h5>
@@ -104,6 +113,8 @@
             <p>Energia Gasta: 45 calorias</p>
             <p>Minutos ativos: 31</p>
             <p>Ritmo Cardíaco: 124 bpm (média)</p>
+            <div id="atividade-caminhar-noite"></div>
+            <button class="btn btn-primary" onclick="addInfo('atividade-caminhar-noite')">Adicionar Informação</button>
         </div>
         <div class="col-md-4">
             <h5 class="fw-bold">Pratica de Badminton 🏸</h5>
@@ -111,6 +122,8 @@
             <p>Energia Gasta: 245 calorias</p>
             <p>Minutos ativos: 85</p>
             <p>Ritmo Cardíaco: 172 bpm (média)</p>
+            <div id="atividade-badminton"></div>
+            <button class="btn btn-primary" onclick="addInfo('atividade-badminton')">Adicionar Informação</button>
         </div>
     </div>
 
@@ -122,10 +135,14 @@
             <p>Novembro de 2024: 84,9kg</p>
             <p>Outubro de 2024: 83,2kg</p>
             <p>Agosto de 2024: 87,2kg</p>
+            <div id="medicoes-peso"></div>
+            <button class="btn btn-primary" onclick="addInfo('medicoes-peso')">Adicionar Informação</button>
         </div>
         <div class="col-md-4">
             <h5 class="fw-bold">Altura</h5>
             <p>Agosto 2023 - Dezembro 2024: 187cm</p>
+            <div id="medicoes-altura"></div>
+            <button class="btn btn-primary" onclick="addInfo('medicoes-altura')">Adicionar Informação</button>
         </div>
         <div class="col-md-4">
             <h5 class="fw-bold">Gordura corporal</h5>
@@ -133,6 +150,8 @@
             <p>Novembro 2024: 26,2% - 27%</p>
             <p>Outubro 2024: 27% - 28,5%</p>
             <p>Setembro 2024 - 28,5% - 32,5%</p>
+            <div id="medicoes-gordura"></div>
+            <button class="btn btn-primary" onclick="addInfo('medicoes-gordura')">Adicionar Informação</button>
         </div>
     </div>
 
@@ -144,34 +163,48 @@
             <p>17 - 23 Novembro: 73 - 84 bpm</p>
             <p>10 - 16 Novembro: 76 - 81 bpm</p>
             <p>3 - 9 Novembro: 82 - 89 bpm</p>
+            <div id="sinaisVitais-ritmoRepouso"></div>
+            <button class="btn btn-primary" onclick="addInfo('sinaisVitais-ritmoRepouso')">Adicionar Informação</button>
         </div>
         <div class="col-md-4">
             <h5 class="fw-bold">Ritmo cardíaco</h5>
             <p>Sem informação registada.</p>
+            <div id="sinaisVitais-ritmo"></div>
+            <button class="btn btn-primary" onclick="addInfo('sinaisVitais-ritmo')">Adicionar Informação</button>
         </div>
         <div class="col-md-4">
             <h5 class="fw-bold">Pressão arterial</h5>
             <p>Sem informação registada</p>
+            <div id="sinaisVitais-pressao"></div>
+            <button class="btn btn-primary" onclick="addInfo('sinaisVitais-pressao')">Adicionar Informação</button>
         </div>
     </div>
     <div class="row mb-4" style="margin-left: 70px;">
         <div class="col-md-4">
             <h5 class="fw-bold">Frequência respiratória</h5>
             <p>Sem informação registada</p>
+            <div id="sinaisVitais-frequenciaRespiratoria"></div>
+            <button class="btn btn-primary" onclick="addInfo('sinaisVitais-frequenciaRespiratoria')">Adicionar Informação</button>
         </div>
         <div class="col-md-4">
             <h5 class="fw-bold">Glicose no sangue</h5>
             <p>Sem informação registada.</p>
+            <div id="sinaisVitais-glicose"></div>
+            <button class="btn btn-primary" onclick="addInfo('sinaisVitais-glicose')">Adicionar Informação</button>
         </div>
         <div class="col-md-4">
             <h5 class="fw-bold">Saturação de oxigênio</h5>
             <p>Sem informação registada</p>
+            <div id="sinaisVitais-saturacaoOxigenio"></div>
+            <button class="btn btn-primary" onclick="addInfo('sinaisVitais-saturacaoOxigenio')">Adicionar Informação</button>
         </div>
     </div>
-    <div class="row"  style="margin-left: 70px;">
+    <div class="row" style="margin-left: 70px;">
         <div class="col-md-4">
             <h5 class="fw-bold">Temperatura Corporal</h5>
             <p>Sem informação registada.</p>
+            <div id="sinaisVitais-temperatura"></div>
+            <button class="btn btn-primary" onclick="addInfo('sinaisVitais-temperatura')">Adicionar Informação</button>
         </div>
     </div>
     <h4 class="fw-bold mb-3" style="margin-left: 70px;">Nutrição e Hidratação</h4>
@@ -181,18 +214,24 @@
             <p>Meta: 2000 kcal</p>
             <p>Consumido hoje: 1850 kcal</p>
             <p>Restante: 150 kcal</p>
+            <div id="nutricao-calorias"></div>
+            <button class="btn btn-primary" onclick="addInfo('nutricao-calorias')">Adicionar Informação</button>
         </div>
         <div class="col-md-4">
             <h5 class="fw-bold">Macronutrientes</h5>
             <p>Carboidratos: 50% (230g)</p>
             <p>Proteínas: 30% (90g)</p>
             <p>Gorduras: 20% (40g)</p>
+            <div id="nutricao-macronutrientes"></div>
+            <button class="btn btn-primary" onclick="addInfo('nutricao-macronutrientes')">Adicionar Informação</button>
         </div>
         <div class="col-md-4">
             <h5 class="fw-bold">Consumo de Água</h5>
             <p>Meta: 2,5 litros</p>
             <p>Ingerido hoje: 1,8 litros</p>
             <p>Restante: 0,7 litros</p>
+            <div id="nutricao-agua"></div>
+            <button class="btn btn-primary" onclick="addInfo('nutricao-agua')">Adicionar Informação</button>
         </div>
     </div>
     <div class="row" style="margin-left: 70px;">
@@ -201,6 +240,8 @@
             <p>Pequeno Almoço: Aveia com frutas (300 kcal)</p>
             <p>Almoço: Peito de frango com batata-doce e legumes (600 kcal)</p>
             <p>Jantar: Salada com salmão grelhado (550 kcal)</p>
+            <div id="nutricao-refeicoesBalanceadas"></div>
+            <button class="btn btn-primary" onclick="addInfo('nutricao-refeicoesBalanceadas')">Adicionar Informação</button>
         </div>
     </div>
 
@@ -215,6 +256,47 @@
             sincronizada com a sua conta Google e os seus dispositivos.
         </p>
     </div>
+    <script>
+        function addInfo(sectionId) {
+            let newInfo = prompt("Adicione a nova informação:");
+            if (newInfo) {
+                const storedData = JSON.parse(localStorage.getItem(sectionId)) || [];
+                storedData.push(newInfo);
+                localStorage.setItem(sectionId, JSON.stringify(storedData));
+                renderSection(sectionId, storedData);
+            }
+        }
+
+        function renderSection(sectionId, data) {
+            const sectionDiv = document.getElementById(sectionId);
+            sectionDiv.innerHTML = ""; // Clear existing content
+            data.forEach((info, index) => {
+                sectionDiv.insertAdjacentHTML('beforeend', `<p>${info} <button class='btn btn-sm btn-danger' onclick="removeInfo('${sectionId}', ${index})">Remover</button></p>`);
+            });
+        }
+
+        function removeInfo(sectionId, index) {
+            const storedData = JSON.parse(localStorage.getItem(sectionId)) || [];
+            storedData.splice(index, 1);
+            localStorage.setItem(sectionId, JSON.stringify(storedData));
+            renderSection(sectionId, storedData);
+        }
+
+        // Load stored data on page load
+        window.onload = () => {
+            const sections = [
+                'historico', 'marcacoes', 'atividade-caminhar-almoco', 'atividade-caminhar-noite', 'atividade-badminton',
+                'medicoes-peso', 'medicoes-altura', 'medicoes-gordura',
+                'sinaisVitais-ritmoRepouso', 'sinaisVitais-ritmo', 'sinaisVitais-pressao', 'sinaisVitais-temperatura',
+                'sinaisVitais-frequenciaRespiratoria', 'sinaisVitais-glicose', 'sinaisVitais-saturacaoOxigenio',
+                'nutricao-calorias', 'nutricao-agua', 'nutricao-macronutrientes', 'nutricao-refeicoesBalanceadas'
+            ];
+            sections.forEach(sectionId => {
+                const data = JSON.parse(localStorage.getItem(sectionId)) || [];
+                renderSection(sectionId, data);
+            });
+        };
+    </script>
 
 
 

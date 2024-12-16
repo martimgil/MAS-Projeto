@@ -46,81 +46,187 @@
 <body>
   <nav class="navbar navbar-expand-lg " style="background-color: #80ba00">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Corsano@UA</a>
+      <a class="navbar-brand" href="#"><img src="imagens/LogoCorSano_white.svg" height="50px" width="auto"><img src="imagens/Marca%20UA%20Complementar%20BRANCO.png" height="50px" width="auto"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+        <ul class="navbar-nav mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="alimentacao.html">Alimentação</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contactos</a>
+            <a class="nav-link" href="#">Aulas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link ms-auto" href="#" style="float: right">Iniciar sessão</a>
+            <a class="nav-link" href="#">O Campus</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="progresso.html">O meu progresso</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Recompensas</a>
           </li>
         </ul>
-        <a class="btn btn-light" role="button" style="color:white !important;" href="signup.html">Iniciar sessão</a>
-        <span class="navbar-text">
-            </span>
+        <a class="btn btn-light" role="button" style="color:black !important;" href="signup.html">Área Pessoal</a>
       </div>
     </div>
   </nav>
   <div class="container py-5">
     <div class="row text-center mb-4">
-      <h3 class="fw-bold">Alimentação Saudável - FAQ</h3>
-      <p class="lead">Procuras uma alimentação mais saudável? Estás no local certo! Aqui terás informação preciosa.</p>
+      <div class="col">
+        <h3 class="fw-bold">Alimentação Saudável - FAQ</h3>
+        <p class="lead">Procura uma alimentação mais saudável? Está no local certo! Aqui encontrará informações preciosas.</p>
+      </div>
     </div>
 
     <section class="mb-5">
       <div class="bg-light p-4 rounded shadow-sm">
-        <h1 class="h4 fw-bold">Alimentação Saudável: O Que É e Por Que É Importante?</h1>
-        <p>A alimentação saudável é essencial para manter o corpo e a mente em equilíbrio, além de prevenir doenças e promover uma vida longa e ativa. Ela envolve a escolha de alimentos variados e ricos em nutrientes, como frutas, legumes, grãos integrais, proteínas magras e gorduras saudáveis. Mais do que seguir dietas restritivas, a alimentação saudável busca equilíbrio e prazer, respeitando as necessidades individuais e preferências culturais.</p>
+        <h1 class="h4 fw-bold mb-3">Alimentação Saudável: O Que É e Por Que É Importante?</h1>
+        <p>A alimentação saudável é essencial para manter o corpo e a mente em equilíbrio, além de prevenir doenças e promover uma vida longa e ativa. Envolve a escolha de alimentos variados e ricos em nutrientes, como frutas, legumes, grãos integrais, proteínas magras e gorduras saudáveis. Mais do que seguir dietas restritivas, a alimentação saudável procura equilíbrio e prazer, respeitando as necessidades individuais e preferências culturais.</p>
         <p>Comer bem não significa apenas contar calorias ou evitar certos alimentos, mas sim adotar hábitos alimentares que sustentem o bem-estar físico e emocional. Beber bastante água, consumir porções adequadas e limitar alimentos processados e ricos em açúcar são pilares fundamentais de uma dieta equilibrada.</p>
       </div>
     </section>
 
     <section>
-      <h2 class="h4 mb-4 fw-bold">Perguntas Frequentes (FAQ)</h2>
+      <h2 class="h4 fw-bold mb-4 text-center">Perguntas Frequentes (FAQ)</h2>
 
-      <article class="mb-4">
-        <h3 class="h5">1. O que é considerado uma alimentação saudável?</h3>
-        <p>Uma alimentação saudável é aquela que fornece todos os nutrientes necessários para o corpo funcionar adequadamente. Ela deve incluir alimentos frescos e variados, priorizando frutas, vegetais, proteínas magras, gorduras boas e carboidratos integrais, além de ser adaptada às necessidades de cada pessoa.</p>
-      </article>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="faq1Heading">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+              1. O que é considerado uma alimentação saudável?
+            </button>
+          </h3>
+          <div id="faq1" class="accordion-collapse collapse show" aria-labelledby="faq1Heading" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Uma alimentação saudável é aquela que fornece todos os nutrientes necessários para o corpo funcionar adequadamente. Deve incluir alimentos frescos e variados, priorizando frutas, vegetais, proteínas magras, gorduras boas e carboidratos integrais, além de ser adaptada às necessidades de cada pessoa.
+            </div>
+          </div>
+        </div>
 
-      <article class="mb-4">
-        <h3 class="h5">2. Posso comer doces ou fast food e ainda assim manter uma alimentação saudável?</h3>
-        <p>Sim, desde que seja com moderação. Uma alimentação saudável não exige a eliminação total de alimentos considerados "não saudáveis". O importante é que esses alimentos sejam consumidos ocasionalmente e não substituam os nutrientes essenciais que o corpo precisa.</p>
-      </article>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="faq2Heading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+              2. Posso comer doces ou fast food e ainda assim manter uma alimentação saudável?
+            </button>
+          </h3>
+          <div id="faq2" class="accordion-collapse collapse" aria-labelledby="faq2Heading" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Sim, desde que seja com moderação. Uma alimentação saudável não exige a eliminação total de alimentos considerados "não saudáveis". O importante é que esses alimentos sejam consumidos ocasionalmente e não substituam os nutrientes essenciais que o corpo precisa.
+            </div>
+          </div>
+        </div>
 
-      <article class="mb-4">
-        <h3 class="h5">3. Como posso começar a me alimentar de forma mais saudável?</h3>
-        <ul>
-          <li>Substitua alimentos processados por versões naturais ou minimamente processadas.</li>
-          <li>Inclua mais frutas e vegetais em suas refeições.</li>
-          <li>Reduza o consumo de açúcar e sal.</li>
-          <li>Planeia as tuas refeições para evitar escolhas impulsivas.</li>
-          <li>Mantenha-se hidratado adequadamente.</li>
-        </ul>
-      </article>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="faq3Heading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+              3. Como posso começar a alimentar-me de forma mais saudável?
+            </button>
+          </h3>
+          <div id="faq3" class="accordion-collapse collapse" aria-labelledby="faq3Heading" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              <ul>
+                <li>Substitua alimentos processados por versões naturais ou minimamente processadas.</li>
+                <li>Inclua mais frutas e vegetais nas suas refeições.</li>
+                <li>Reduza o consumo de açúcar e sal.</li>
+                <li>Planeie as suas refeições para evitar escolhas impulsivas.</li>
+                <li>Mantenha-se hidratado adequadamente.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-      <article class="mb-4">
-        <h3 class="h5">4. Dietas restritivas são recomendadas?</h3>
-        <p>Na maioria dos casos, não. Dietas muito restritivas podem ser insustentáveis e causar deficiências nutricionais. O ideal é buscar equilíbrio e adotar mudanças de longo prazo nos hábitos alimentares, de preferência com a orientação de um nutricionista.</p>
-      </article>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="faq4Heading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+              4. Dietas restritivas são recomendadas?
+            </button>
+          </h3>
+          <div id="faq4" class="accordion-collapse collapse" aria-labelledby="faq4Heading" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Na maioria dos casos, não. Dietas muito restritivas podem ser insustentáveis e causar deficiências nutricionais. O ideal é buscar equilíbrio e adotar mudanças de longo prazo nos hábitos alimentares, de preferência com a orientação de um nutricionista.
+            </div>
+          </div>
+        </div>
 
-      <article class="mb-4">
-        <h3 class="h5">5. Qual a importância da hidratação na alimentação saudável?</h3>
-        <p>A hidratação é essencial para o bom funcionamento do corpo, ajudando na digestão, circulação e regulação da temperatura corporal. Recomenda-se consumir cerca de 2 litros de água por dia, podendo variar de acordo com o clima e as necessidades individuais.</p>
-      </article>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="faq5Heading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+              5. Qual a importância da hidratação na alimentação saudável?
+            </button>
+          </h3>
+          <div id="faq5" class="accordion-collapse collapse" aria-labelledby="faq5Heading" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              A hidratação é essencial para o bom funcionamento do corpo, ajudando na digestão, circulação e regulação da temperatura corporal. Recomenda-se consumir cerca de 2 litros de água por dia, podendo variar de acordo com o clima e as necessidades individuais.
+            </div>
+          </div>
+        </div>
 
-      <article class="mb-4">
-        <h3 class="h5">6. Existe uma regra universal para alimentação saudável?</h3>
-        <p>Não existe uma fórmula única que funcione para todos, pois as necessidades variam de acordo com idade, sexo, nível de atividade física e condições de saúde. Porém, a regra geral é buscar equilíbrio, variedade e priorizar alimentos naturais.</p>
-      </article>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="faq6Heading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+              6. Existe uma regra universal para alimentação saudável?
+            </button>
+          </h3>
+          <div id="faq6" class="accordion-collapse collapse" aria-labelledby="faq6Heading" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Não existe uma fórmula única que funcione para todos, pois as necessidades variam de acordo com idade, sexo, nível de atividade física e condições de saúde. Porém, a regra geral é buscar equilíbrio, variedade e priorizar alimentos naturais.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="faq7Heading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq7" aria-expanded="false" aria-controls="faq7">
+              7. Qual o impacto do consumo de alimentos ultraprocessados?
+            </button>
+          </h3>
+          <div id="faq7" class="accordion-collapse collapse" aria-labelledby="faq7Heading" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              O consumo excessivo de alimentos ultraprocessados pode aumentar o risco de doenças como obesidade, diabetes tipo 2 e problemas cardiovasculares. Estes alimentos costumam ser ricos em açúcares, gorduras, sal e aditivos, com baixo valor nutricional. Prefira alimentos frescos ou minimamente processados.
+            </div>
+          </div>
+        </div>
 
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="faq8Heading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq8" aria-expanded="false" aria-controls="faq8">
+              8. Como a alimentação saudável influencia a saúde mental?
+            </button>
+          </h3>
+          <div id="faq8" class="accordion-collapse collapse" aria-labelledby="faq8Heading" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Uma alimentação equilibrada pode melhorar o humor, a concentração e a energia. Nutrientes como ômega-3, vitaminas do complexo B e antioxidantes têm um papel importante na saúde do cérebro. Evitar alimentos processados e manter uma dieta rica em nutrientes favorece o bem-estar mental.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="faq9Heading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq9" aria-expanded="false" aria-controls="faq9">
+              9. Qual a diferença entre carboidratos simples e complexos?
+            </button>
+          </h3>
+          <div id="faq9" class="accordion-collapse collapse" aria-labelledby="faq9Heading" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Carboidratos simples, como açúcar e farinha branca, são rapidamente absorvidos pelo corpo, podendo causar picos de glicose. Já os carboidratos complexos, presentes em grãos integrais e legumes, oferecem energia de forma gradual e contêm fibras, promovendo saciedade e saúde intestinal.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="faq10Heading">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq10" aria-expanded="false" aria-controls="faq10">
+              10. Como ler os rótulos dos alimentos para escolhas mais saudáveis?
+            </button>
+          </h3>
+          <div id="faq10" class="accordion-collapse collapse" aria-labelledby="faq10Heading" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Ao ler os rótulos, verifique os ingredientes: prefira produtos com listas curtas e ingredientes naturais. Atenção aos valores de açúcar, sódio e gorduras saturadas. Além disso, observe o tamanho da porção para interpretar corretamente as informações nutricionais.
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </div>
 
