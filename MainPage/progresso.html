@@ -291,11 +291,12 @@
                 'sinaisVitais-frequenciaRespiratoria', 'sinaisVitais-glicose', 'sinaisVitais-saturacaoOxigenio',
                 'nutricao-calorias', 'nutricao-agua', 'nutricao-macronutrientes', 'nutricao-refeicoesBalanceadas'
             ];
-            sections.forEach(sectionId => {
-                const data = JSON.parse(localStorage.getItem(sectionId)) || [];
-                renderSection(sectionId, data);
-            });
-        };
+                sections.forEach(sectionId => {
+                    const data = JSON.parse(localStorage.getItem(sectionId)) || [];
+                    renderSection(sectionId, data);
+                    console.log(sectionId, data);
+                });
+            };
     </script>
 
 

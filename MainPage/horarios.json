@@ -1,0 +1,110 @@
+{
+    "modalidades": [
+      {
+        "nome": "Tiro com arco",
+        "horarios": [
+          {
+            "dia": "Quinta-feira",
+            "inicio": "16:00",
+            "fim": "17:00"
+          }
+
+        ]
+      },
+      {
+        "nome": "Badminton",
+        "horarios": [
+          {
+            "dia": "Segunda-feira",
+            "inicio": "17:00",
+            "fim": "21:00"
+          },
+          {
+            "dia": "Quinta-feira",
+            "inicio": "19:00",
+            "fim": "21:00"
+          }
+        ]
+      },
+      {
+        "nome": "Padel",
+        "horarios": [
+          {
+            "dia": "Quarta-feira",
+            "inicio": "17:00",
+            "fim": "18:00"
+          },
+          {
+            "dia": "Quinta-feira",
+            "inicio": "19:00",
+            "fim": "21:00"
+          }
+        ]
+      },
+      {
+        "nome": "Basquetebol",
+        "horarios": [
+          {
+            "dia": "Segunda-feira",
+            "inicio": "18:30",
+            "fim": "20:00"
+          },
+          {
+            "dia": "Quinta-feira",
+            "inicio": "18:00",
+            "fim": "19:00"
+          }
+        ]
+      },
+      {
+        "nome": "Ultimate Frisbee",
+        "horarios": [
+          {
+            "dia": "Segunda-feira",
+            "inicio": "19:30",
+            "fim": "21:00"
+          },
+          {
+            "dia": "Quinta-feira",
+            "inicio": "19:30",
+            "fim": "21:00"
+          }
+        ]
+      }, 
+      {
+        "nome": "Futsal Feminino",
+        "horarios": [
+          {
+            "dia": "Terça-feira",
+            "inicio": "17:00",
+            "fim": "18:30"
+          }
+        ]
+      }, 
+      {
+        "nome": "Futebol 7",
+        "horarios": [
+          {
+            "dia": "Quarta-feira",
+            "inicio": "17:30",
+            "fim": "19:00"
+          }
+        ]
+      },
+      {
+        "nome": "Voleibol",
+        "horarios": [
+          {
+            "dia": "Terça-feira",
+            "inicio": "18:30",
+            "fim": "20:00"
+          },
+          {
+            "dia": "Quinta-feira",
+            "inicio": "19:00",
+            "fim": "20:00"
+          }
+        ]
+      }
+    ]
+  }
