@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CorSano@UA</title>
+    <title>Área Pessoal - CorSano@UA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,167 +17,85 @@
     <link rel="stylesheet" href="assets/css/Features-Centered-Icons-icons.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <style>
-    .container {
-    text-align: center;
-    }
+        .carousel-item img {
+            height: 700px; /* Define a altura fixa */
+            object-fit: cover; /* Mantém a proporção da imagem */
+        }
+        .rounded-border {
+            border: 2px solid #80ba00;
+            border-radius: 15px;
+            padding: 10px;
+            display: inline-block;
+            background-color: #80ba00;
+            width: 100px;
+            height: 100px;
+            align-items: center;
+            vertical-align: center;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
 
-    .carousel-item img {
-    height: 700px;
-    object-fit: cover;
-    }
-    .rounded-border {
-    border: 2px solid #80ba00;
-    border-radius: 15px;
-    padding: 10px;
-    display: inline-block;
-    background-color: #80ba00;
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    vertical-align: center;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-
-    }
-    .icon-container .fa-solid {
-    color: white;
-    text-align: center;
-    }
-
-    body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-    }
-    h1, h2 {
-    text-align: center;
-    margin-bottom: 10px;
-    }
-    .container {
-    width: 90%;
-    max-width: 600px;
-    margin: 20px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    .input-section, .objective-section {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 20px;
-    }
-    .input-section input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    }
-    .objective-section input[type="checkbox"] {
-    margin-right: 10px;
-    }
-    .objective-section li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    }
-    button {
-    padding: 10px 15px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 14px;
-    }
-    button:hover {
-    background-color: #218838;
-    }
-    .progress-bar-container {
-    width: 100%;
-    margin: 20px 0;
-    height: 20px;
-    background-color: #e9ecef;
-    border-radius: 5px;
-    overflow: hidden;
-    }
-    .progress-bar {
-    height: 100%;
-    width: 0%;
-    background-color: #28a745;
-    text-align: center;
-    color: #fff;
-    line-height: 20px;
-    font-size: 12px;
-    transition: width 0.3s ease;
-    }
-    .reward img {
-    display: block;
-    width: 100%;
-    margin: 10px auto;
-    border-radius: 5px;
-    }
-    .reward p {
-    text-align: center;
-    }
+        }
+        .icon-container .fa-solid {
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-
 <nav class="navbar navbar-expand-lg " style="background-color: #80ba00">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">Corsano@UA</a>
+        <a class="navbar-brand" href="index.html"><img src="imagens/LogoCorSano_white.svg" height="50px" width="auto"><img src="imagens/Marca%20UA%20Complementar%20BRANCO.png" height="50px" width="auto"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+            <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="alimentacao.html">Alimentação</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contactos</a>
+                    <a class="nav-link" href="Aulas.html">Aulas</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link ms-auto" href="" style="float: right">Iniciar sessão</a>
+                    <a class="nav-link" href="Instalacoes.html">O Campus</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="progresso.html">O meu progresso</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="recompensas.html">Recompensas</a>
                 </li>
             </ul>
-            <a class="btn btn-light" role="button" style="color:white !important;" href="signup.html">Iniciar sessão</a>
-            <span class="navbar-text">
-          </span>
+            <a class="btn btn-light" role="button" style="color:black !important;" href="signup.html">Área Pessoal</a>
         </div>
     </div>
 </nav>
 
-<div class="container">
-    <h1>Objetivos</h1>
-    <p>Define aqui os teus objetivos:</p>
-    <div class="input-section">
-        <input type="text" id="newObjective" placeholder="Insira um objetivo">
-        <button onclick="addObjective()">Adicionar Objetivo</button>
+<div class="container text-center">
+    <div class="row">
+        <h1>Área Pessoal</h1>
     </div>
-
-    <h2>Os meus objetivos</h2>
-    <ul id="objectiveList" class="objective-section"></ul>
-
-    <h2>Recompensas</h2>
-    <div class="progress-bar-container">
-        <div class="progress-bar" id="progressBar">0%</div>
+    <div class="row text-start">
+        <h3>Olá, Claúdio!</h3>
+        <p>Bem-vindo de volta!</p>
     </div>
-    <div class="reward">
-        <p>Quando completar a sua barra de progresso terá acesso a uma refeição gratuita no TrêsDe!</p>
-        <img src=imagens/TrêsDê.jpeg" alt="Refeição de recompensa">
+    <div class="row text-start">
+
+        <div class="col-md-6">
+            <h3>Recompensas e Objetivos</h3>
+            <div class="col-md-3">
+                <img src="imagens/TresDe.jpeg" height="100px" width="auto">
+            </div>
+            <div class="col-md-3">
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar" style="width: 50%; background-color: #80ba00; color: white; text-align: center;">0%</div>                </div>
+                <div class="reward">
+                    <p>Recompensa: Refeição no TrêsDe</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -233,14 +151,20 @@
         </div>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        updateProgressBar();
+    });
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script src="assets/js/bs-init.js"></script>
-<script src="assets/js/app.js"></script>
-<script src="recompensas.js"></script>
-<script> AOS.init(); </script>
-
-
+    function updateProgressBar() {
+        const progressBar = document.getElementById('progressBar');
+        const completedObjectives = new Set(JSON.parse(localStorage.getItem('completedObjectives')) || []);
+        const fixedObjectiveCount = 5;
+        const progress = (completedObjectives.size / fixedObjectiveCount) * 100;
+        progressBar.style.width = progress + '%';
+        progressBar.innerText = Math.round(progress) + '%';
+    }
+</script>
 </body>
 </html>
