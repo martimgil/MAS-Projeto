@@ -72,7 +72,7 @@
         ]
       }, 
       {
-        "nome": "Futsal Feminino",
+        "nome": "Futsal Femenino",
         "horarios": [
           {
             "dia": "Terça-feira",
@@ -103,6 +103,21 @@
             "dia": "Quinta-feira",
             "inicio": "19:00",
             "fim": "20:00"
+          }
+        ]
+      },
+      {
+        "nome": "Taekwondo e Jiu Jitsu",
+        "horarios": [
+          {
+            "dia": "Quarta-feira",
+            "inicio": "19:30",
+            "fim": "21:00"
+          },
+          {
+            "dia": "Sexta-feira",
+            "inicio": "19:30",
+            "fim": "21:00"
           }
         ]
       }
