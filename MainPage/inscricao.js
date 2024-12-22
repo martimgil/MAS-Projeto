@@ -8,7 +8,7 @@ $(document).ready(function(){
         if (option == "cartao"){
             pagamentoInfo.html("<div style='display: flex; align-items: center; justify-content: center;'><img src='OutrasImagens/cartao.png' style='width: 200px; height: auto; margin-right: 10px;'/><div><p>Possui 9,74€ no seu cartão de estudante.</p><p>Pode efetuar o seu carregamento em <a href='https://mysas.ua.pt'>mysas.ua.pt</a> ou nos quiosques disponíveis no campus</p><p>Custo: 2€ (preço de não sócio da AAUAv)</p></div></div>");
         } else if (option == "mbway") {
-            pagamentoInfo.html("<div class='form-floating mb-3'><input type='text' class='form-control' value='933678952' id='ntelemovel' placeholder='Insira o seu número associado ao MBWay' required><label for='ntelemovel'>Telemóvel associado ao MBWay</label><div class='invalid-feedback'>Por favor, insira o seu número de telemóvel associado ao MBWay</div></div>");
+            pagamentoInfo.html("<div class='form-floating mb-3'><input type='text' class='form-control' id='ntelemovel' placeholder='Insira o seu número associado ao MBWay' required><label for='ntelemovel'>Telemóvel associado ao MBWay</label><div class='invalid-feedback'>Por favor, insira o seu número de telemóvel associado ao MBWay</div></div>");
         }
     }
 
@@ -77,6 +77,16 @@ $(document).ready(function(){
         }
     }
 
+    function getPersonalData() {
+        const personalData = JSON.parse(localStorage.getItem('personalData'));
+        if (personalData){
+            $('#nome').val(personalData.nome);
+            $('#nmec').val(personalData.nmec);
+            $('#ntelemovel').val(personalData.ntelemovel);
+        }
+    }
+
+    getPersonalData();
     getData();
     getHorario();
 });
