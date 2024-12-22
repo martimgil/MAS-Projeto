@@ -13,6 +13,7 @@ function checkInfo(){
             personalData.nmec = '126001';
             personalData.ntelemovel = '933678952';
             localStorage.setItem("personalData", JSON.stringify(personalData));
+            console.log("persondata", personalData);
         }
         else {
             alert("Password incorreta!");

@@ -32,7 +32,7 @@ $(document).ready(function(){
         }
     };
 
-      function goToProgresso(){
+    function goToProgresso(){
         const storedData = JSON.parse(localStorage.getItem("marcacoes")) || [];
         const urlParams = new URLSearchParams(window.location.search);
         const modalidade = urlParams.get('modalidade');
@@ -54,6 +54,7 @@ $(document).ready(function(){
             console.log('Modalidade não encontrada na URL.');
         }
     }
+
     function getHorario() {
         const urlParams = new URLSearchParams(window.location.search);
         const modalidade = urlParams.get('modalidade');
@@ -80,7 +81,7 @@ $(document).ready(function(){
     function getPersonalData() {
         const personalData = JSON.parse(localStorage.getItem('personalData'));
         if (personalData){
-            $('#nome').val(personalData.nome);
+            $('#name').val(personalData.name);
             $('#nmec').val(personalData.nmec);
             $('#ntelemovel').val(personalData.ntelemovel);
         }
