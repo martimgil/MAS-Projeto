@@ -5,7 +5,7 @@ function checkInfo(){
     if (email === "claudioxavier@ua.pt") {
         if (password === "claudiozito01") {
             alert("Login efetuado com sucesso!");
-            window.location.href = "progresso.html";
+            window.location.href = "areapessoal.html";
         }
         else {
             alert("Password incorreta!");
